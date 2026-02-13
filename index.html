@@ -159,8 +159,8 @@
   <script src="script.js" defer></script>
 
   <script type="module">
-    import * as THREE from "https://unpkg.com/three@0.160.0/build/three.module.js";
-    import { GLTFLoader } from "https://unpkg.com/three@0.160.0/examples/jsm/loaders/GLTFLoader.js";
+    import * as THREE from "https://esm.sh/three@0.160.0";
+    import { GLTFLoader } from "https://esm.sh/three@0.160.0/examples/jsm/loaders/GLTFLoader.js";
 
     const stage = document.getElementById("helmet-bg");
     const f1Stage = document.getElementById("f1-car-float");
@@ -385,7 +385,7 @@
       renderScene();
     }
 
-    const helmetAssetVersion = "2026-02-13-2";
+    const helmetAssetVersion = "2026-02-13-3";
     const helmetSources = [
       `${new URL("./assets/F1_helmet.glb", import.meta.url).href}?v=${helmetAssetVersion}`,
       `./assets/F1_helmet.glb?v=${helmetAssetVersion}`,
