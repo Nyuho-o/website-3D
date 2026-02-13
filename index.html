@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="home-3d">
+  <div id="pastel-bg" aria-hidden="true"></div>
+  <div id="normal-stars" aria-hidden="true"></div>
+  <div id="nebula-bg" aria-hidden="true"></div>
+  <div id="shooting-stars" aria-hidden="true"></div>
+  <div id="f1-car-float" aria-hidden="true"></div>
+  <div id="helmet-bg" aria-hidden="true"></div>
+
+  <header>
+    <div>
+      <h1>GLUED TO THE WEB</h1>
+      <p>Learning new things and development. It's challenging!</p>
+    </div>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      Menu
+    </button>
+
+    <nav id="site-nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="illustration.html">Illustration</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="kicker">Brand Designer Portfolio</p>
+        <h2>I design bold, strategic brand identities.</h2>
+        <p>
+          I help founders and creative teams build clear visual systems that feel premium, distinct, and consistent across every touchpoint.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="projects.html">View case studies</a>
+          <a class="btn btn-secondary" href="contact.html">Book a discovery call</a>
+        </div>
+      </div>
+
+      <img src="https://picsum.photos/seed/abstract-red-grid/1200/1200" alt="Abstract hero image" />
+      <a class="btn btn-small section-side-action" href="projects.html">Explore</a>
+    </section>
+
+    <section>
+      <h2>Services</h2>
+      <div class="pill-row">
+        <span class="pill">Brand Strategy</span>
+        <span class="pill">Logo Design</span>
+        <span class="pill">Visual Identity</span>
+        <span class="pill">Art Direction</span>
+        <span class="pill">Brand Guidelines</span>
+        <span class="pill">Social Templates</span>
+      </div>
+      <div class="section-gallery" aria-label="Services images">
+        <div class="image-slot"><img src="https://picsum.photos/seed/services-brand-strategy/1400/900" alt="Brand strategy moodboard reference" loading="lazy" /></div>
+        <div class="image-slot"><img src="https://picsum.photos/seed/services-logo-type/1400/900" alt="Logo and typography exploration" loading="lazy" /></div>
+      </div>
+      <a class="btn btn-small section-side-action" href="contact.html">Book</a>
+    </section>
+
+    <section>
+      <h2>Selected brand projects</h2>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Aurea Studio</h3>
+          <p>Luxury wellness brand identity with custom serif logo and packaging direction.</p>
+          <a class="btn btn-small" href="projects.html">View case</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Velocity Motors</h3>
+          <p>Performance-focused rebrand with strong typography, icon set, and campaign assets.</p>
+          <a class="btn btn-small" href="projects.html">View case</a>
+        </article>
+
+        <article class="project-card">
+          <h3>North Bean Coffee</h3>
+          <p>Complete identity refresh including color system, labels, and retail mockups.</p>
+          <a class="btn btn-small" href="projects.html">View case</a>
+        </article>
+      </div>
+      <div class="section-gallery" aria-label="Project images">
+        <div class="image-slot"><img src="https://picsum.photos/seed/projects-packaging/1400/900" alt="Packaging design project visual" loading="lazy" /></div>
+        <div class="image-slot"><img src="https://picsum.photos/seed/projects-identity/1400/900" alt="Brand identity mockup" loading="lazy" /></div>
+      </div>
+      <a class="btn btn-small section-side-action" href="projects.html">View</a>
+    </section>
+
+    <section>
+      <h2>My process</h2>
+      <ul>
+        <li>Discovery and positioning workshop</li>
+        <li>Moodboard and creative direction</li>
+        <li>Logo and identity system design</li>
+        <li>Application mockups across print and digital</li>
+        <li>Final handoff + brand guidelines</li>
+      </ul>
+      <div class="section-gallery" aria-label="Process images">
+        <div class="image-slot"><img src="https://picsum.photos/seed/process-workshop/1400/900" alt="Creative workshop session" loading="lazy" /></div>
+        <div class="image-slot"><img src="https://picsum.photos/seed/process-sketch/1400/900" alt="Brand sketching process" loading="lazy" /></div>
+      </div>
+      <a class="btn btn-small section-side-action" href="about.html">Details</a>
+    </section>
+
+    <section>
+      <h2>Illustration</h2>
+      <p>
+        A focused set of illustration pieces showing style range, composition, and visual storytelling.
+      </p>
+      <div class="section-gallery" aria-label="Illustration preview images">
+        <div class="image-slot"><img src="images/ALOT2.jpg" alt="Illustration ALOT" loading="lazy" /></div>
+        <div class="image-slot"><img src="images/SMALL.jpg" alt="Illustration SMALL" loading="lazy" /></div>
+      </div>
+      <a class="btn btn-small section-side-action" href="illustration.html">Illustration</a>
+    </section>
+
+    <section id="available-packages-section">
+      <h2>Available packages</h2>
+      <ul>
+        <li>Starter Identity — logo suite + color + typography</li>
+        <li>Growth Identity — strategy + full visual system</li>
+        <li>Launch Identity — full brand + social + website direction</li>
+      </ul>
+      <div class="section-gallery" aria-label="Package images">
+        <div class="image-slot"><img src="https://picsum.photos/seed/packages-guidelines/1400/900" alt="Brand guideline document preview" loading="lazy" /></div>
+        <div class="image-slot"><img src="https://picsum.photos/seed/packages-social/1400/900" alt="Social media template designs" loading="lazy" /></div>
+      </div>
+      <a id="pricing-side-btn" class="btn btn-small section-side-action" href="contact.html">Pricing</a>
+    </section>
+
+    <section id="lets-build-section">
+      <h2>Let’s build your brand</h2>
+      <p>Open for freelance collaborations and selected long-term partnerships.</p>
+      <a class="btn" href="contact.html">Start your project</a>
+      <div class="section-gallery" aria-label="Collaboration images">
+        <div class="image-slot"><img src="https://picsum.photos/seed/collab-studio/1400/900" alt="Creative studio environment" loading="lazy" /></div>
+        <div class="image-slot"><img src="https://picsum.photos/seed/collab-workspace/1400/900" alt="Design collaboration workspace" loading="lazy" /></div>
+      </div>
+      <a class="btn btn-small section-side-action" href="contact.html">Start</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Nyuh</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+  <script type="module">
+    import * as THREE from "https://unpkg.com/three@0.160.0/build/three.module.js";
+    import { GLTFLoader } from "https://unpkg.com/three@0.160.0/examples/jsm/loaders/GLTFLoader.js";
+
+    const stage = document.getElementById("helmet-bg");
+    const f1Stage = document.getElementById("f1-car-float");
+    const availablePackagesSection = document.getElementById("available-packages-section");
+    const letsBuildSection = document.getElementById("lets-build-section");
+    const pricingSideBtn = document.getElementById("pricing-side-btn");
+    const normalStarsLayer = document.getElementById("normal-stars");
+    const starsLayer = document.getElementById("shooting-stars");
+    if (!stage) {
+      throw new Error("Missing #helmet-bg container");
+    }
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    stage.appendChild(renderer.domElement);
+
+    const scene = new THREE.Scene();
+    scene.background = null;
+
+    const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 100);
+    camera.position.set(0, 1.2, 4.2);
+    const baseCameraY = 1.2;
+    const baseCameraZ = 4.2;
+    const wideCameraY = 1.35;
+    const wideCameraZ = 5.4;
+    const zoomMultiplier = 1.2947;
+    const rotationDirection = Math.random() < 0.5 ? -1 : 1;
+    const wideBreakpoint = 1100;
+    const wideScaleMultiplier = 1.35;
+    const wideOffsetX = 0;
+    const verticalLiftFactor = 0.1;
+    const spinSpeed = 0.022;
+    const exitAtPageProgress = 1.216512;
+    const riseExitMultiplier = 2.2;
+    const scrollSmoothFactor = 0.12;
+    const idleSpinSpeed = 0.0022;
+    const idleDelayMs = 160;
+    const dragSpinFactor = 0.012;
+    let smoothScrollY = window.scrollY;
+    let targetScrollY = window.scrollY;
+    let idleRotationOffset = 0;
+    let lastScrollTime = performance.now();
+    let manualControl = false;
+    let isDraggingHelmet = false;
+    let dragPointerX = 0;
+    let manualSpinOffset = 0;
+    const raycaster = new THREE.Raycaster();
+    const pointerNdc = new THREE.Vector2();
+    let baseHelmetScale = 1;
+    const baseHelmetPosition = new THREE.Vector3();
+    const baseYRotation = Math.PI;
+    const layoutBox = new THREE.Box3();
+    const layoutSize = new THREE.Vector3();
+
+    const ambient = new THREE.AmbientLight(0xffffff, 0.75);
+    const key = new THREE.DirectionalLight(0xffffff, 1.1);
+    key.position.set(5.2, 5, 5.2);
+    scene.add(ambient, key);
+    const tempHsl = { h: 0, s: 0, l: 0 };
+    const darkRed = new THREE.Color(0x4a030a);
+    let f1Renderer = null;
+    let f1Scene = null;
+    let f1Camera = null;
+    let f1Pivot = null;
+    let f1Car = null;
+    const f1HangTilt = 0;
+    const f1SpinSpeed = 0.0008;
+    const f1StageWidth = 1080;
+    const f1StageHeight = 540;
+    const f1Box = new THREE.Box3();
+    const f1Sphere = new THREE.Sphere();
+
+    if (f1Stage) {
+      f1Renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+      f1Renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      f1Renderer.outputColorSpace = THREE.SRGBColorSpace;
+      f1Stage.appendChild(f1Renderer.domElement);
+
+      f1Scene = new THREE.Scene();
+      f1Camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
+      f1Camera.position.set(0, 2.5, 10.5);
+
+      const f1Ambient = new THREE.AmbientLight(0xffffff, 0.8);
+      const f1Key = new THREE.DirectionalLight(0xffffff, 1.1);
+      f1Key.position.set(3, 5, 4);
+      f1Scene.add(f1Ambient, f1Key);
+
+      f1Pivot = new THREE.Group();
+      f1Car = new THREE.Group();
+      const shellMat = new THREE.MeshStandardMaterial({ color: 0x7d121f, metalness: 0.68, roughness: 0.24 });
+      const accentMat = new THREE.MeshStandardMaterial({ color: 0xd43b4d, metalness: 0.55, roughness: 0.3 });
+      const coreMat = new THREE.MeshStandardMaterial({ color: 0x11141a, metalness: 0.35, roughness: 0.58 });
+      const chromeMat = new THREE.MeshStandardMaterial({ color: 0xb8c4d4, metalness: 0.95, roughness: 0.16 });
+
+      const core = new THREE.Mesh(new THREE.OctahedronGeometry(0.9, 1), coreMat);
+      core.scale.set(1.35, 2.45, 1.15);
+      f1Car.add(core);
+
+      const spine = new THREE.Mesh(new THREE.BoxGeometry(0.16, 4.9, 0.16), shellMat);
+      spine.position.y = 0.05;
+      f1Car.add(spine);
+
+      const upperPlate = new THREE.Mesh(new THREE.BoxGeometry(2.6, 0.12, 1.45), accentMat);
+      upperPlate.position.y = 1.35;
+      upperPlate.rotation.z = Math.PI * 0.12;
+      f1Car.add(upperPlate);
+
+      const lowerPlate = new THREE.Mesh(new THREE.BoxGeometry(2.2, 0.12, 1.28), shellMat);
+      lowerPlate.position.y = -1.35;
+      lowerPlate.rotation.z = -Math.PI * 0.12;
+      f1Car.add(lowerPlate);
+
+      const finGeo = new THREE.BoxGeometry(0.1, 2.2, 0.95);
+      for (const side of [-1, 1]) {
+        const fin = new THREE.Mesh(finGeo, side > 0 ? accentMat : chromeMat);
+        fin.position.set(side * 0.95, 0.1, 0);
+        fin.rotation.z = side * 0.46;
+        f1Car.add(fin);
+      }
+
+      const shardGeo = new THREE.TetrahedronGeometry(0.42, 0);
+      for (let i = 0; i < 8; i += 1) {
+        const shard = new THREE.Mesh(shardGeo, i % 2 === 0 ? shellMat : chromeMat);
+        const t = i / 8;
+        const y = -1.85 + t * 3.7;
+        const side = i % 2 === 0 ? 1 : -1;
+        shard.position.set(side * (0.95 + (i % 3) * 0.1), y, (i % 4 - 1.5) * 0.18);
+        shard.rotation.set(i * 0.35, i * 0.2, side * 0.6);
+        f1Car.add(shard);
+      }
+
+      const beam = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.05, 3.2, 12), chromeMat);
+      beam.rotation.z = Math.PI / 2;
+      beam.rotation.y = Math.PI * 0.2;
+      f1Car.add(beam);
+
+      const innerGlow = new THREE.Mesh(
+        new THREE.SphereGeometry(0.44, 24, 24),
+        new THREE.MeshStandardMaterial({ color: 0xff5f6f, emissive: 0x2a0006, emissiveIntensity: 1.2, metalness: 0.2, roughness: 0.4 })
+      );
+      f1Car.add(innerGlow);
+
+      f1Car.position.x = 0;
+      f1Car.rotation.x = -0.12;
+      f1Car.rotation.z = f1HangTilt;
+      f1Car.scale.setScalar(2.65);
+      f1Pivot.add(f1Car);
+      f1Scene.add(f1Pivot);
+      fitF1Camera();
+    }
+
+    function fitF1Camera() {
+      if (!f1Car || !f1Camera) return;
+      f1Box.setFromObject(f1Car);
+      f1Box.getBoundingSphere(f1Sphere);
+      const radius = Math.max(f1Sphere.radius, 0.001);
+      const vFov = THREE.MathUtils.degToRad(f1Camera.fov);
+      const hFov = 2 * Math.atan(Math.tan(vFov / 2) * f1Camera.aspect);
+      const distanceV = radius / Math.sin(vFov / 2);
+      const distanceH = radius / Math.sin(hFov / 2);
+      const distance = Math.max(distanceV, distanceH) * 1.01;
+
+      f1Camera.position.set(
+        f1Sphere.center.x,
+        f1Sphere.center.y + radius * 0.08,
+        f1Sphere.center.z + distance
+      );
+      f1Camera.near = Math.max(0.01, distance - radius * 3.5);
+      f1Camera.far = distance + radius * 6;
+      f1Camera.lookAt(f1Sphere.center);
+      f1Camera.updateProjectionMatrix();
+    }
+
+    function updateF1Position() {
+      if (!f1Stage || !pricingSideBtn || !availablePackagesSection || !letsBuildSection) return;
+      const buttonRect = pricingSideBtn.getBoundingClientRect();
+      const sectionRect = availablePackagesSection.getBoundingClientRect();
+      const letsRect = letsBuildSection.getBoundingClientRect();
+      const isVisible = buttonRect.bottom > 0 && letsRect.top < window.innerHeight && letsRect.bottom > 0;
+      if (!isVisible) {
+        f1Stage.style.opacity = "0";
+        return;
+      }
+
+      const centerX = (sectionRect.right + buttonRect.left) * 0.5;
+      const top = sectionRect.top;
+      const bottom = letsRect.bottom;
+      const stageHeight = Math.max(220, bottom - top);
+      const stageWidth = f1StageWidth;
+
+      f1Stage.style.opacity = "1";
+      f1Stage.style.width = `${stageWidth}px`;
+      f1Stage.style.height = `${stageHeight}px`;
+      const left = centerX - stageWidth * 0.5;
+      f1Stage.style.left = `${left}px`;
+      f1Stage.style.top = `${top}px`;
+    }
+
+    const loader = new GLTFLoader();
+
+    function attachHelmet(helmet) {
+      const box = new THREE.Box3().setFromObject(helmet);
+      const size = new THREE.Vector3();
+      box.getSize(size);
+      const maxDim = Math.max(size.x, size.y, size.z) || 1;
+      const scale = (2 / maxDim) * zoomMultiplier;
+      helmet.scale.setScalar(scale);
+      baseHelmetScale = scale;
+
+      box.setFromObject(helmet);
+      const center = new THREE.Vector3();
+      box.getCenter(center);
+      helmet.position.sub(center);
+      helmet.position.y -= box.min.y;
+      baseHelmetPosition.copy(helmet.position);
+
+      helmet.traverse((node) => {
+        if (!node.isMesh || !node.material) return;
+        const materials = Array.isArray(node.material) ? node.material : [node.material];
+
+        for (const material of materials) {
+          if (!material || !material.color) continue;
+          material.color.getHSL(tempHsl);
+          const c = material.color;
+          const isPurpleHue = tempHsl.s > 0.12 && (tempHsl.h >= 0.66 || tempHsl.h <= 0.02);
+          const isPurpleRgb = c.b > c.g * 1.2 && c.r > c.g * 1.05 && c.b > 0.12;
+          const isPurple = isPurpleHue || isPurpleRgb;
+          if (isPurple) {
+            material.color.copy(darkRed);
+            if ("emissive" in material && material.emissive) {
+              material.emissive.setHex(0x120001);
+            }
+            if ("map" in material && material.map) {
+              material.map = null;
+            }
+            material.needsUpdate = true;
+          }
+        }
+      });
+
+      helmet.rotation.y = baseYRotation;
+      scene.add(helmet);
+      scene.userData.helmet = helmet;
+      applyHelmetLayout();
+      renderScene();
+    }
+
+    const helmetAssetVersion = "2026-02-13";
+    const helmetSources = [
+      `${new URL("./assets/F1_helmet.glb", import.meta.url).href}?v=${helmetAssetVersion}`,
+      `./assets/F1_helmet.glb?v=${helmetAssetVersion}`,
+      `assets/F1_helmet.glb?v=${helmetAssetVersion}`
+    ];
+
+    function loadHelmetWithFallback(sourceIndex = 0) {
+      const source = helmetSources[sourceIndex];
+      if (!source) {
+        console.error("All helmet model sources failed. Check path/server/CORS for assets/F1_helmet.glb.");
+        return;
+      }
+
+      loader.load(
+        source,
+        (gltf) => {
+          attachHelmet(gltf.scene);
+        },
+        undefined,
+        (error) => {
+          console.warn(`Helmet load failed for source: ${source}`, error);
+          loadHelmetWithFallback(sourceIndex + 1);
+        }
+      );
+    }
+
+    if (window.location.protocol === "file:") {
+      console.warn("GLB loading often fails on file:// URLs. Use a local HTTP server.");
+    }
+    loadHelmetWithFallback();
+
+    function resize() {
+      const width = stage.clientWidth || window.innerWidth;
+      const height = stage.clientHeight || window.innerHeight;
+      const isWide = window.innerWidth >= wideBreakpoint;
+
+      renderer.setSize(width, height, false);
+      camera.aspect = width / height;
+      camera.position.y = isWide ? wideCameraY : baseCameraY;
+      camera.position.z = isWide ? wideCameraZ : baseCameraZ;
+      camera.updateProjectionMatrix();
+      applyHelmetLayout();
+      if (f1Renderer && f1Camera && f1Stage) {
+        const f1Width = f1Stage.clientWidth || f1StageWidth;
+        const f1Height = f1Stage.clientHeight || f1StageHeight;
+        f1Renderer.setSize(f1Width, f1Height, false);
+        f1Camera.aspect = f1Width / f1Height;
+        fitF1Camera();
+      }
+      updateF1Position();
+      renderScene();
+    }
+
+    function applyHelmetLayout() {
+      const helmet = scene.userData.helmet;
+      if (!helmet) return;
+
+      const isWide = window.innerWidth >= wideBreakpoint;
+      const helmetScale = isWide ? baseHelmetScale * wideScaleMultiplier : baseHelmetScale;
+
+      helmet.scale.setScalar(helmetScale);
+      helmet.position.copy(baseHelmetPosition);
+      layoutBox.setFromObject(helmet);
+      layoutBox.getSize(layoutSize);
+      helmet.position.y += layoutSize.y * verticalLiftFactor;
+      if (isWide) {
+        helmet.position.x += wideOffsetX;
+      }
+      helmet.userData.baseY = helmet.position.y;
+      helmet.userData.riseMax = layoutSize.y * riseExitMultiplier;
+    }
+
+    function renderScene() {
+      const helmet = scene.userData.helmet;
+      if (helmet) {
+        if (!manualControl) {
+          const isIdle = performance.now() - lastScrollTime > idleDelayMs;
+          if (isIdle) {
+            idleRotationOffset += idleSpinSpeed * rotationDirection;
+          }
+          helmet.rotation.y = baseYRotation + smoothScrollY * spinSpeed * rotationDirection + idleRotationOffset;
+          const baseY = helmet.userData.baseY ?? helmet.position.y;
+          const riseMax = helmet.userData.riseMax ?? 0;
+          const scrollMax = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
+          const pageProgress = smoothScrollY / scrollMax;
+          const riseProgress = Math.min(pageProgress / exitAtPageProgress, 1);
+          helmet.position.y = baseY + riseMax * riseProgress;
+        } else {
+          helmet.rotation.y = baseYRotation + manualSpinOffset;
+          const manualY = helmet.userData.manualY ?? (helmet.userData.baseY ?? helmet.position.y);
+          helmet.position.y = manualY;
+        }
+      }
+      renderer.render(scene, camera);
+    }
+
+    function initShootingStars() {
+      if (!starsLayer) return;
+      const starCount = 20;
+      const fragment = document.createDocumentFragment();
+
+      for (let i = 0; i < starCount; i += 1) {
+        const star = document.createElement("span");
+        star.className = "shooting-star";
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.width = `${28 + Math.random() * 58}px`;
+        star.style.opacity = `${0.25 + Math.random() * 0.55}`;
+        star.dataset.speed = `${0.14 + Math.random() * 0.26}`;
+        star.dataset.phase = `${Math.random() * 420}`;
+        const baseAngle = Math.atan2(0.35, -1);
+        const spread = (Math.random() * 24 - 12) * (Math.PI / 180);
+        const angle = baseAngle + spread;
+        star.dataset.dirX = `${Math.cos(angle)}`;
+        star.dataset.dirY = `${Math.sin(angle)}`;
+        star.style.setProperty("--star-rotate", `${angle}rad`);
+        fragment.appendChild(star);
+      }
+
+      starsLayer.innerHTML = "";
+      starsLayer.appendChild(fragment);
+    }
+
+    function initNormalStars() {
+      if (!normalStarsLayer) return;
+      const starCount = 180;
+      const fragment = document.createDocumentFragment();
+
+      for (let i = 0; i < starCount; i += 1) {
+        const star = document.createElement("span");
+        star.className = "normal-star";
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.opacity = `${0.2 + Math.random() * 0.7}`;
+        star.style.setProperty("--star-size", `${0.8 + Math.random() * 1.7}px`);
+        star.style.setProperty("--twinkle-duration", `${2.6 + Math.random() * 4.2}s`);
+        star.style.setProperty("--twinkle-delay", `${Math.random() * 5.4}s`);
+        fragment.appendChild(star);
+      }
+
+      normalStarsLayer.innerHTML = "";
+      normalStarsLayer.appendChild(fragment);
+    }
+
+    function updateShootingStars(timeMs = 0) {
+      if (!starsLayer) return;
+      const stars = starsLayer.querySelectorAll(".shooting-star");
+      const scrollAmount = window.scrollY;
+      const time = timeMs * 0.08;
+
+      for (const star of stars) {
+        const speed = Number(star.dataset.speed || "0.2");
+        const phase = Number(star.dataset.phase || "0");
+        const dirX = Number(star.dataset.dirX || "-0.9");
+        const dirY = Number(star.dataset.dirY || "0.3");
+        const travel = (time * speed * 44.8 + scrollAmount * speed * 8.96 + phase) % 420;
+        const x = dirX * travel;
+        const y = dirY * travel;
+        star.style.setProperty("--star-x", `${x}px`);
+        star.style.setProperty("--star-y", `${y}px`);
+      }
+    }
+
+    function onScroll() {
+      if (manualControl) return;
+      targetScrollY = window.scrollY;
+      lastScrollTime = performance.now();
+      updateF1Position();
+    }
+
+    function getHelmetMeshes(root) {
+      const meshes = [];
+      if (!root) return meshes;
+      root.traverse((node) => {
+        if (node.isMesh) meshes.push(node);
+      });
+      return meshes;
+    }
+
+    function onHelmetPointerDown(event) {
+      const helmet = scene.userData.helmet;
+      if (!helmet) return;
+
+      const rect = renderer.domElement.getBoundingClientRect();
+      pointerNdc.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+      pointerNdc.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+      raycaster.setFromCamera(pointerNdc, camera);
+      const hits = raycaster.intersectObjects(getHelmetMeshes(helmet), false);
+      if (!hits.length) return;
+
+      manualControl = true;
+      isDraggingHelmet = true;
+      dragPointerX = event.clientX;
+      manualSpinOffset = helmet.rotation.y - baseYRotation;
+      helmet.userData.manualY = helmet.position.y;
+      lastScrollTime = performance.now();
+    }
+
+    function onHelmetPointerMove(event) {
+      if (!isDraggingHelmet || !manualControl) return;
+      const dx = event.clientX - dragPointerX;
+      dragPointerX = event.clientX;
+      manualSpinOffset += dx * dragSpinFactor;
+    }
+
+    function onHelmetPointerUp() {
+      if (manualControl) {
+        manualControl = false;
+        targetScrollY = window.scrollY;
+        smoothScrollY = window.scrollY;
+        idleRotationOffset = manualSpinOffset - smoothScrollY * spinSpeed * rotationDirection;
+        manualSpinOffset = 0;
+      }
+      isDraggingHelmet = false;
+    }
+
+    function onHelmetDoubleClick() {
+      manualControl = false;
+      isDraggingHelmet = false;
+      manualSpinOffset = 0;
+      targetScrollY = window.scrollY;
+      smoothScrollY = window.scrollY;
+    }
+
+    function animateMainScene() {
+      smoothScrollY += (targetScrollY - smoothScrollY) * scrollSmoothFactor;
+      renderScene();
+      requestAnimationFrame(animateMainScene);
+    }
+
+    function animateShootingStars(timeMs) {
+      updateShootingStars(timeMs);
+      if (f1Renderer && f1Scene && f1Camera && f1Car && f1Pivot) {
+        f1Pivot.rotation.y = 0;
+        f1Car.rotation.y = timeMs * f1SpinSpeed;
+        f1Renderer.render(f1Scene, f1Camera);
+      }
+      requestAnimationFrame(animateShootingStars);
+    }
+
+    initNormalStars();
+    initShootingStars();
+    renderer.domElement.addEventListener("pointerdown", onHelmetPointerDown);
+    window.addEventListener("pointermove", onHelmetPointerMove);
+    window.addEventListener("pointerup", onHelmetPointerUp);
+    renderer.domElement.addEventListener("dblclick", onHelmetDoubleClick);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", resize);
+    resize();
+    updateF1Position();
+    requestAnimationFrame(animateMainScene);
+    requestAnimationFrame(animateShootingStars);
+    renderScene();
+  </script>
+</body>
+</html>

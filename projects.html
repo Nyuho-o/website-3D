@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Website - Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>GLUED TO THE WEB</h1>
+      <p>Learning new things and development. It's challenging!</p>
+    </div>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      Menu
+    </button>
+
+    <nav id="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="illustration.html">Illustration</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>My projects</h2>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="images/testpourwebsite.jpg" alt="Project preview" />
+          <h3>Landing Page</h3>
+          <p>Practice project focused on layout and spacing.</p>
+          <a class="btn btn-small" href="#">View project</a>
+        </article>
+
+        <article class="project-card">
+          <img src="images/testpourwebsite.jpg" alt="Project preview" />
+          <h3>Portfolio Website</h3>
+          <p>Multi-page responsive portfolio project.</p>
+          <a class="btn btn-small" href="#">View project</a>
+        </article>
+
+        <article class="project-card">
+          <img src="images/testpourwebsite.jpg" alt="Project preview" />
+          <h3>Grid Gallery</h3>
+          <p>Experimenting with CSS Grid layouts.</p>
+          <a class="btn btn-small" href="#">View project</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Nyuh</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

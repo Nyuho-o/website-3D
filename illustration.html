@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Website - Illustration</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>GLUED TO THE WEB</h1>
+      <p>Learning new things and development. It's challenging!</p>
+    </div>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      Menu
+    </button>
+
+    <nav id="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a class="active" href="illustration.html">Illustration</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Illustration</h2>
+      <p>Collection: ALOT, SMALL, BIG, and ALONE.</p>
+
+      <div class="illustration-grid" aria-label="Illustration gallery">
+        <article class="illustration-card">
+          <h3>ALOT</h3>
+          <div class="image-slot">
+            <img src="images/ALOT2.jpg" alt="Illustration ALOT" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="illustration-card">
+          <h3>SMALL</h3>
+          <div class="image-slot">
+            <img src="images/SMALL.jpg" alt="Illustration SMALL" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="illustration-card">
+          <h3>BIG</h3>
+          <div class="image-slot">
+            <img src="images/BIG3.jpg" alt="Illustration BIG" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="illustration-card">
+          <h3>ALONE</h3>
+          <div class="image-slot">
+            <img src="images/ALONE%2011.jpg" alt="Illustration ALONE" loading="lazy" />
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Nyuh</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

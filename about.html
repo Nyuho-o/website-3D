@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Website - About</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>GLUED TO THE WEB</h1>
+      <p>Learning new things and development. It's challenging!</p>
+    </div>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      Menu
+    </button>
+
+    <nav id="site-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="illustration.html">Illustration</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>About me</h2>
+      <p>
+        I'm learning frontend development step by step and building this site as practice.
+      </p>
+      <p>
+        My current focus is clean HTML structure, consistent CSS, and improving JavaScript basics.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Nyuh</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
