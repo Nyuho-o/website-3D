@@ -220,8 +220,6 @@
     const key = new THREE.DirectionalLight(0xffffff, 1.1);
     key.position.set(5.2, 5, 5.2);
     scene.add(ambient, key);
-    const tempHsl = { h: 0, s: 0, l: 0 };
-    const darkRed = new THREE.Color(0x4a030a);
     let f1Renderer = null;
     let f1Scene = null;
     let f1Camera = null;
@@ -378,29 +376,7 @@
       helmet.position.y -= box.min.y;
       baseHelmetPosition.copy(helmet.position);
 
-      helmet.traverse((node) => {
-        if (!node.isMesh || !node.material) return;
-        const materials = Array.isArray(node.material) ? node.material : [node.material];
-
-        for (const material of materials) {
-          if (!material || !material.color) continue;
-          material.color.getHSL(tempHsl);
-          const c = material.color;
-          const isPurpleHue = tempHsl.s > 0.12 && (tempHsl.h >= 0.66 || tempHsl.h <= 0.02);
-          const isPurpleRgb = c.b > c.g * 1.2 && c.r > c.g * 1.05 && c.b > 0.12;
-          const isPurple = isPurpleHue || isPurpleRgb;
-          if (isPurple) {
-            material.color.copy(darkRed);
-            if ("emissive" in material && material.emissive) {
-              material.emissive.setHex(0x120001);
-            }
-            if ("map" in material && material.map) {
-              material.map = null;
-            }
-            material.needsUpdate = true;
-          }
-        }
-      });
+      // Preserve original GLB materials and textures exactly as authored.
 
       helmet.rotation.y = baseYRotation;
       scene.add(helmet);
@@ -409,7 +385,7 @@
       renderScene();
     }
 
-    const helmetAssetVersion = "2026-02-13";
+    const helmetAssetVersion = "2026-02-13-2";
     const helmetSources = [
       `${new URL("./assets/F1_helmet.glb", import.meta.url).href}?v=${helmetAssetVersion}`,
       `./assets/F1_helmet.glb?v=${helmetAssetVersion}`,
